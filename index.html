@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GENON – Slazený, slaný a kyselý nápoj</title>
+  <meta name="description" content="GENON – energie ve třech příchutích: slazený, slaný a kyselý nápoj.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Barlow:wght@400;600;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-flavor="slazeny">
+  <canvas id="bolts" aria-hidden="true"></canvas>
+
+  <header class="top">
+    <a href="#uvod" class="logo" aria-label="GENON">GE<span>N</span>ON</a>
+    <nav>
+      <a href="#prichute">Příchutě</a>
+      <a href="#proc">Proč GENON</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="uvod">
+      <div class="hero-text">
+        <p class="badge" id="badge">Nová příchuť</p>
+        <h1 class="title" id="title">Slazený nápoj</h1>
+        <p class="claim" id="claim">Sladká energie, která tě nabije.</p>
+        <div class="switch" role="tablist" aria-label="Vyber příchuť">
+          <button role="tab" class="chip active" data-flavor="slazeny" aria-selected="true">Slazený</button>
+          <button role="tab" class="chip" data-flavor="slany" aria-selected="false">Slaný</button>
+          <button role="tab" class="chip" data-flavor="kysely" aria-selected="false">Kyselý</button>
+        </div>
+        <a href="#prichute" class="cta">Vypusť energii</a>
+      </div>
+      <div class="hero-art">
+        <img id="poster" src="pictures/Neonový plakát GEMON se slazeným nápojem.png" alt="Plakát GENON slazený nápoj">
+      </div>
+    </section>
+
+    <section class="flavors" id="prichute">
+      
+      <h2>Tři příchutě. Jedna bouře.</h2>
+      
+      <div class="grid">
+        <article class="card" data-flavor="slazeny">
+          <img src="pictures/Neonový plakát GEMON se slazeným nápojem.png" alt="GENON slazený nápoj" loading="lazy">
+          <h3>Slazený nápoj</h3>
+          <p>Fialová elektřina a sladká chuť na každý den.</p>
+          <button class="chip" data-pick="slazeny">Ukázat</button>
+        </article>
+        <article class="card" data-flavor="slany">
+          <img src="pictures/Genon_ Slaný nápoj plný energie.png" alt="GENON slaný nápoj" loading="lazy">
+          <h3>Slaný nápoj</h3>
+          <p>Slanost, která tě nakopne. Chuť mořské bouře.</p>
+          <button class="chip" data-pick="slany">Ukázat</button>
+        </article>
+        <article class="card" data-flavor="kysely">
+          <img src="pictures/Neonový kyselý nápoj GENON.png" alt="GENON kyselý nápoj" loading="lazy">
+          <h3>Kyselý nápoj</h3>
+          <p>Kyselost, která tě probere. Extra výbuch citrusů.</p>
+          <button class="chip" data-pick="kysely">Ukázat</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="why" id="proc">
+      <h2>Proč GENON</h2>
+      <ul>
+        <li><strong>Odvážné chutě</strong> Slazená, slaná i kyselá – vyber si tu svou.</li>
+        <li><strong>Extra výbuch</strong> Každá příchuť má vlastní charakter.</li>
+        <li><strong>Vypusť to</strong> Vypusť energii, slanost nebo kyselinu.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="kontakt">
+    <p class="logo big">GE<span>N</span>ON</p>
+    <p>Spolupráce a dotazy: <a href="mailto:info@genon.cz">info@genon.cz</a></p>
+    <small>© 2026 GENON</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
